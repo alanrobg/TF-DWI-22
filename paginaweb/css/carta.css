@@ -1,0 +1,63 @@
+#nav-carta{
+    background-color:#f3f3ef;
+}
+
+#nav-carta ul .indicator,#nav-carta ul .active{
+    background-color:#e32f40;
+    color:#7b2529;
+}
+#nav-carta .display-big{
+    height: 100%;
+}
+#nav-carta ul{
+    display: inline-block;
+    width: 100%;
+    height: 100% !important;
+    background-color: #f3f3ef;
+}
+
+
+#nav-carta .display-big a{
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+}
+#nav-carta ul li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+#nav-carta ul li{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+#nav-carta ul li a{
+    color:#7a7a7a;
+    font-weight: 700;
+}
+
+#nav-carta ul li a:hover{
+    background-color: #e32f40;
+    color:#7b2529;
+    font-weight: 700;
+}
+
+#Principal-content{
+    min-height: 75vh;
+}
+
+
+@media screen and (max-width:1024px)
+{
+    
+    .card-title{
+        font-size: 14px !important;
+        font-weight: 700 !important;
+    }
+}
+
+footer .row{
+    margin-bottom: 0px !important;
+}
