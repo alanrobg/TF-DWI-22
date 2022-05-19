@@ -9,5 +9,8 @@
     </head>
     <body>
         <h1>Prueba</h1>
+        <form action="Control" > 
+            
+        </form>
     </body>
 </html>
