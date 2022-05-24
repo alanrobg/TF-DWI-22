@@ -8,6 +8,20 @@
     </head>
     <body>
         <h1>Agregar Cliente</h1>
-        
+        <form action="Control" method="post">
+            <label>Nombre: </label>
+            <input type="text" name="nombre"><br>
+            <label>Apellido: </label>
+            <input type="text" name="apellido"><br>
+            <label>Celular: </label>
+            <input type="text" name="celular"><br>
+            <label>Direccion: </label>
+            <input type="text" name="direccion"><br>
+            <label>Correo electronico: </label>
+            <input type="mail" name="correo"><br>
+            <label>Contraseña: </label>
+            <input type="password" name="pass"><br>
+            <input type="submit" name="accion" value="Agregar Cliente">
+        </form>
     </body>
 </html>

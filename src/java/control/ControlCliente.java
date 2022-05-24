@@ -6,12 +6,14 @@
 package control;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.Cliente;
+import modeloDAO.ClienteDAO;
 
 /**
  *
@@ -22,6 +24,26 @@ public class ControlCliente extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        
+        String pag="";
+        String valor = request.getParameter("accion");
+        ClienteDAO cd;
+        
+        if(valor.equalsIgnoreCase("Agregar Cliente")){
+            String nom = request.getParameter("nombre");
+            String ape = request.getParameter("apellido");
+            int cel = Integer.parseInt(request.getParameter("celular"));
+            String dirc = request.getParameter("direccion");
+            String mail = request.getParameter("correo");
+            String contra = request.getParameter("pass");
+            Cliente c = new Cliente(nom, ape, cel, dirc, mail, contra);
+            cd = new ClienteDAO();
+            cd.agregar(c);
+            pag = "vistaCliente/listar.jsp";
+        }
+        
+        RequestDispatcher rd = request.getRequestDispatcher(pag);
+        rd.forward(request, response);
         
     }
 

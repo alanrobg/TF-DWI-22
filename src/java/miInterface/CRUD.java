@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package miInterface;
 
-/**
- *
- * @author Admin
- */
-public interface CRUD {
-    
+import java.util.ArrayList;
+
+
+public interface CRUD<T> {
+    public boolean agregar(T t);
+    public boolean eliminar(T t);
+    public boolean editar(T t);
+    public ArrayList<T> listarTodos();
+    public T listarUno(String codigo);
 }
