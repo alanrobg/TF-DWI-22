@@ -1,5 +1,4 @@
 
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -8,9 +7,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Prueba</h1>
-        <form action="Control" > 
-            
-        </form>
+        <h1>Agregar Cliente</h1>
+        
     </body>
 </html>
