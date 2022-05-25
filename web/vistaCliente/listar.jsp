@@ -18,6 +18,7 @@
             <th>Celular</th>
             <th>Dirección</th>
             <th>Correo</th>
+            <th>Acciones</th>
             <tr>
                 <% ClienteDAO cd = new ClienteDAO();
                    for(Cliente x:cd.listarTodos()){
@@ -27,7 +28,13 @@
                 <td><%=x.getApellido()%></td>
                 <td><%=x.getCelular()%></td>
                 <td><%=x.getDireccion()%></td>
-                <td><%=x.getCorreo()%></td> 
+                <td><%=x.getCorreo()%></td>
+                <td>
+                    <a href="/App_LaToscana/ControlCliente?accion=eliminar&codigo=<%=x.getCodcli()%>">
+                        <input type="button" value="Eliminar"></a>
+                    <a href="/App_LaToscana/ControlCliente?accion=modificar&codigo=<%=x.getCodcli()%>">
+                        <input type="button" value="Editar"></a>
+                </td>
             </tr>
             <%}
                 %>

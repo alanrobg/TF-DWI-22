@@ -55,7 +55,24 @@ public class ClienteDAO implements InterfaceCliente {
 
     @Override
     public boolean editar(Cliente t) {
-        return false;
+        try {
+            String sql="update cliente set nombre=?,apellido=?,celular=?,direccion=?,correo=?,contraseña=?"
+                    + "where id_Cliente=?";
+            con = cn.getConnection();
+            ps = con.prepareStatement(sql);
+            ps.setString(1, t.getNombre());
+            ps.setString(2, t.getApellido());
+            ps.setInt(3,t.getCelular());
+            ps.setString(4, t.getDireccion());
+            ps.setString(5, t.getCorreo());
+            ps.setString(6, t.getPass());
+            ps.setInt(7, t.getCodcli());
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+       return false;
     }
 
     @Override
@@ -82,8 +99,27 @@ public class ClienteDAO implements InterfaceCliente {
     }
 
     @Override
-    public Cliente listarUno(String codigo) {
-        
+    public Cliente listarUno(int codigo) {
+        try {
+            String sql="select * from cliente where id_Cliente=?";
+            con = cn.getConnection();
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, codigo);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                c=new Cliente();
+                c.setCodcli(rs.getInt(1));
+                c.setNombre(rs.getString(2));
+                c.setApellido(rs.getString(3));
+                c.setCelular(rs.getInt(4));
+                c.setDireccion(rs.getString(5));
+                c.setCorreo(rs.getString(6));
+                c.setPass(rs.getString(7));
+                lista.add(c);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return c;
     }
     

@@ -9,5 +9,5 @@ public interface CRUD<T> {
     public boolean eliminar(T t);
     public boolean editar(T t);
     public ArrayList<T> listarTodos();
-    public T listarUno(String codigo);
+    public T listarUno(int codigo);
 }

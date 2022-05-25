@@ -42,7 +42,27 @@ public class ControlCliente extends HttpServlet {
             cd.agregar(c);
             pag = "vistaCliente/listar.jsp";
         }
-        
+        else if(valor.equalsIgnoreCase("modificar")){
+            int cod = Integer.parseInt(request.getParameter("codigo"));
+            cd = new ClienteDAO();
+            Cliente c = new Cliente();
+            c=cd.listarUno(cod);
+            request.setAttribute("cli", c);
+            pag="vistaCliente/editar.jsp";
+        }else if(valor.equalsIgnoreCase("Editar Cliente")){
+            int cod = Integer.parseInt(request.getParameter("codigo"));
+            String nom = request.getParameter("nombre");
+            String ape = request.getParameter("apellido");
+            int cel = Integer.parseInt(request.getParameter("celular"));
+            String dirc = request.getParameter("direccion");
+            String correo = request.getParameter("correo");
+            String contra = request.getParameter("pass");
+            Cliente c = new Cliente(nom, ape, cel, dirc, correo, contra);
+            c.setCodcli(cod);
+            cd=new ClienteDAO();
+            cd.editar(c);
+            pag = "vistaCliente/listar.jsp";
+        }
         RequestDispatcher rd = request.getRequestDispatcher(pag);
         rd.forward(request, response);
     }
