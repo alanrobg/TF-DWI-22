@@ -35,16 +35,18 @@
                 </a>
                 <ul  class="right hide-on-med-and-down" id="principal-menu">
                     <li><a href="index.jsp">INICIO</a></li>
-                    <li><a href="#">CARTA</a></li>
-                    <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
+            <li><a href="carta.jsp">CARTA</a></li>
+            <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
+            <li><a href="CRUD.jsp">CRUD</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-menu">
-            <li><a href="../../indice.jsp">INICIO</a></li>
-            <li><a href="#">CARTA</a></li>
-            <li><a href="../../Ubicanos/Ubicanos/ubicanos.jsp">UBÍCANOS</a></li>
+            <li><a href="index.jsp">INICIO</a></li>
+            <li><a href="carta.jsp">CARTA</a></li>
+            <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
+            <li><a href="CRUD.jsp">CRUD</a></li>
         </ul>
 
     </header>
