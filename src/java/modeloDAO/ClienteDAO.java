@@ -40,12 +40,12 @@ public class ClienteDAO implements InterfaceCliente {
     }
 
     @Override
-    public boolean eliminar(Cliente t) {
+    public boolean eliminar(int codigo) {
         try {
             String sql="delete from cliente where id_Cliente=?";
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
-            ps.setInt(1, t.getCodcli());
+            ps.setInt(1, codigo);
             ps.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);

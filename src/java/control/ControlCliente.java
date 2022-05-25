@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package control;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,10 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import modelo.Cliente;
 import modeloDAO.ClienteDAO;
 
-/**
- *
- * @author Admin
- */
+
 @WebServlet(name = "ControlCliente", urlPatterns = {"/ControlCliente"})
 public class ControlCliente extends HttpServlet {
 
@@ -62,6 +54,12 @@ public class ControlCliente extends HttpServlet {
             cd=new ClienteDAO();
             cd.editar(c);
             pag = "vistaCliente/listar.jsp";
+        }
+        if(valor.equalsIgnoreCase("eliminar")){
+           int cod = Integer.parseInt(request.getParameter("codigo"));
+           cd=new ClienteDAO();
+           cd.eliminar(cod);
+           pag = "vistaCliente/listar.jsp";
         }
         RequestDispatcher rd = request.getRequestDispatcher(pag);
         rd.forward(request, response);
