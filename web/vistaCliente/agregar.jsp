@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>Agregar Cliente</h1>
-        <form action="Control" method="post">
+        <form action="/App_LaToscana/ControlCliente" method="POST">
             <label>Nombre: </label>
             <input type="text" name="nombre"><br>
             <label>Apellido: </label>
@@ -18,10 +18,10 @@
             <label>Direccion: </label>
             <input type="text" name="direccion"><br>
             <label>Correo electronico: </label>
-            <input type="mail" name="correo"><br>
+            <input type="text" name="correo"><br>
             <label>Contraseña: </label>
             <input type="password" name="pass"><br>
-            <input type="submit" name="accion" value="Agregar Cliente">
+            <input type="submit" name="accion" value="Ingresar Cliente">
         </form>
     </body>
 </html>

@@ -20,7 +20,6 @@ public class ClienteDAO implements InterfaceCliente {
     
     @Override
     public boolean agregar(Cliente t) {
-       
         try {
             String sql="insert into cliente (id_Cliente,nombre,apellido,celular,direccion,correo,contraseña) "
                     + "values (null,?,?,?,?,?,?)";
@@ -42,16 +41,43 @@ public class ClienteDAO implements InterfaceCliente {
 
     @Override
     public boolean eliminar(Cliente t) {
+        try {
+            String sql="delete from cliente where id_Cliente=?";
+            con = cn.getConnection();
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, t.getCodcli());
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return false;
     }
 
     @Override
     public boolean editar(Cliente t) {
-       return false; 
+        return false;
     }
 
     @Override
     public ArrayList<Cliente> listarTodos() {
+        try {
+            String sql="select * from cliente";
+            con = cn.getConnection();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                c=new Cliente();
+                c.setCodcli(rs.getInt(1));
+                c.setNombre(rs.getString(2));
+                c.setApellido(rs.getString(3));
+                c.setCelular(rs.getInt(4));
+                c.setDireccion(rs.getString(5));
+                c.setCorreo(rs.getString(6));
+                lista.add(c);
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return lista;
     }
 

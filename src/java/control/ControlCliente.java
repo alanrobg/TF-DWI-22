@@ -6,6 +6,7 @@
 package control;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -19,17 +20,17 @@ import modeloDAO.ClienteDAO;
  *
  * @author Admin
  */
-@WebServlet(name = "Control", urlPatterns = {"/Control"})
+@WebServlet(name = "ControlCliente", urlPatterns = {"/ControlCliente"})
 public class ControlCliente extends HttpServlet {
 
+    
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
         String pag="";
         String valor = request.getParameter("accion");
         ClienteDAO cd;
         
-        if(valor.equalsIgnoreCase("Agregar Cliente")){
+        if(valor.equalsIgnoreCase("Ingresar Cliente")){
             String nom = request.getParameter("nombre");
             String ape = request.getParameter("apellido");
             int cel = Integer.parseInt(request.getParameter("celular"));
@@ -44,7 +45,6 @@ public class ControlCliente extends HttpServlet {
         
         RequestDispatcher rd = request.getRequestDispatcher(pag);
         rd.forward(request, response);
-        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

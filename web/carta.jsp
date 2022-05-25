@@ -7,11 +7,11 @@
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="recursos/css/materialize.min.css"  media="screen,projection"/>
      <!--Importando hoja de estilos propio-->
-     <link rel="stylesheet" type="text/css"  href="../css/Carta.css">
-     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-     <link rel="icon" href="../img/index/icono.png" type="image/png" size="32x12">
+     <link rel="stylesheet" type="text/css"  href="recursos/css/Carta.css">
+     <link rel="stylesheet" type="text/css" href="recursos/css/estilos.css">
+     <link rel="icon" href="recursos/img/index/icono.png" type="image/png" size="32x12">
 
      <!--Slider jquery plugin-->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -29,14 +29,14 @@
     <header id="Cabecera">
         <nav class="nav nav--size-big">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"><img src="../img/index/Logo.png" alt="" id="Logo"></a>
+                <a href="#" class="brand-logo"><img src="recursos/img/index/Logo.png" alt="" id="Logo"></a>
                 <a href="#" data-target="mobile-menu" class="sidenav-trigger">
                     <i class="large material-icons ">menu</i>
                 </a>
                 <ul  class="right hide-on-med-and-down" id="principal-menu">
-                    <li><a href="../../indice.jsp">INICIO</a></li>
+                    <li><a href="index.jsp">INICIO</a></li>
                     <li><a href="#">CARTA</a></li>
-                    <li><a href="../../Ubicanos/Ubicanos/ubicanos.jsp">UBÍCANOS</a></li>
+                    <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
                 </ul>
             </div>
         </nav>
