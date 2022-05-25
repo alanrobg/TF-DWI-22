@@ -37,7 +37,6 @@
                     <li><a href="index.jsp">INICIO</a></li>
             <li><a href="carta.jsp">CARTA</a></li>
             <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
-            <li><a href="CRUD.jsp">CRUD</a></li>
                 </ul>
             </div>
         </nav>

@@ -44,7 +44,8 @@
                     <li><a href="index.jsp">INICIO</a></li>
                     <li><a href="carta.jsp">CARTA</a></li>
                     <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
-                    <li><a href="CRUD.JSP">CRUD</a></li>
+                    <li><a href="login.jsp">LOGIN</a></li>
+                    <li><a href="CRUD.jsp">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,18 +54,43 @@
             <li><a href="index.jsp">INICIO</a></li>
             <li><a href="carta.jsp">CARTA</a></li>
             <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
-            <li><a href="CRUD.JSP">CRUD</a></li>
+            <li><a href="CRUD.jsp">LOGIN</a></li>
         </ul>
 
 
     </header>
     
-    <div class="container" style="max-width: 500px">
-        <h4 style="text-align: center">Mantenimiento de clientes</h4>
-        <div style="display: flex; justify-content: space-around">
-            <a href="vistaCliente/agregar.jsp"><input class="btn btn-primary" type="button" value="Agregar"></a>
-            <a href="vistaCliente/listar.jsp"><input class="btn btn-secondary" type="button" value="Listar"></a>
+    <div id="Contenido">
+        
+        <div id="Slider" class="">
+            <div class="slider bx-wrapper bx-viewport ">
+                <div><img src="recursos/img/index/slider/imagen1.jpg" alt="Portada 1"></div>
+                <div><img src="recursos/img/index/slider/imagen2.jpg" alt="Portada 2"></div>
+                <div><img src="recursos/img/index/slider/imagen3.jpg" alt="Portada 3"></div>
+                <div><img src="recursos/img/index/slider/imagen4.jpg" alt="Portada 4"></div>
+                <div><img src="recursos/img/index/slider/imagen5.jpg" alt="Portada 5"></div>
+            </div>
         </div>
+       
+        <!--
+
+        <div class="row">
+
+            <div class="col s12 m3">
+                <img src="img/index/promo1.png" alt="" class="img-post">
+            </div>
+            <div class="col s12 m3">
+                <img src="img/index/promo2.png" alt="" class="img-post">
+            </div>
+            <div class="col s12 m3">
+                <img src="img/index/promo3.png" alt="" class="img-post">
+            </div>
+            <div class="col s12 m3">
+                <img src="img/index/promo4.png" alt="" class="img-post">
+            </div>
+        </div>
+
+        -->
     </div>
 
 

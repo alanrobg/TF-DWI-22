@@ -22,7 +22,7 @@
     <script type="text/javascript" src="recursos/js/index.js" ></script>
     <script type="text/javascript" src="recursos/js/materialize.js" ></script>
 
-    <link rel="icon" href="recursos/img/index/Logo.png" type="image/png" size="32x12">
+    <link rel="icon" href="recursos/img/index/índice.png" type="image/png" size="32x12">
     <!--Etiquetas meta SEO-->
     <meta name="robots" content="index,follow">
     <meta name="description" content="La mejor pizza artesanal de Lima">
@@ -44,7 +44,7 @@
                     <li><a href="index.jsp">INICIO</a></li>
                     <li><a href="carta.jsp">CARTA</a></li>
                     <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
-                    <li><a href="CRUD.jsp">CRUD</a></li>
+                     <li><a href="login.jsp">LOGIN</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,7 +53,7 @@
             <li><a href="index.jsp">INICIO</a></li>
             <li><a href="carta.jsp">CARTA</a></li>
             <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
-            <li><a href="CRUD.jsp">CRUD</a></li>
+            <li><a href="login.jsp">LOGIN</a></li>
         </ul>
 
 
