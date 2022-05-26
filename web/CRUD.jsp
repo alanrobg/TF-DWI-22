@@ -41,7 +41,7 @@
                     <i class="large material-icons ">menu</i>
                 </a>
                 <ul  class="right hide-on-med-and-down" id="principal-menu">
-                    <li><a href="index.jsp">INICIO</a></li>
+                    <li><a href="index_1.jsp">INICIO</a></li>
                     <li><a href="carta.jsp">CARTA</a></li>
                     <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
                     <li><a href="CRUD.JSP">CRUD</a></li>

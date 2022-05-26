@@ -34,14 +34,13 @@
     <header id="Cabecera">
         <nav class="nav nav--size-big">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">
+                <a href="index.jsp" class="brand-logo">
                     <img src="recursos/img/index/Logo.png" alt="" id="Logo">
                 </a>
                 <a href="#" data-target="mobile-menu" class="sidenav-trigger">
                     <i class="large material-icons ">menu</i>
                 </a>
                 <ul  class="right hide-on-med-and-down" id="principal-menu">
-                    <li><a href="index.jsp">INICIO</a></li>
                     <li><a href="carta.jsp">CARTA</a></li>
                     <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
                      <li><a href="login.jsp">LOGIN</a></li>
@@ -50,7 +49,6 @@
         </nav>
 
         <ul class="sidenav" id="mobile-menu">
-            <li><a href="index.jsp">INICIO</a></li>
             <li><a href="carta.jsp">CARTA</a></li>
             <li><a href="ubicanos.jsp">UBÍCANOS</a></li>
             <li><a href="login.jsp">LOGIN</a></li>

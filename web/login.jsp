@@ -122,8 +122,7 @@
             <div class="col s12 m6">
                 <div class="Copyright__Container">
                     <span>
-                        Copyright © 2020 Pizzería Toscana <br> Todos los derechos reservados. <br>
-                        Diseñado por <a href="https://www.linkedin.com/in/renzo-antonio-arroyo-andrade-126066178/" target="blank">Renzo Arroyo Andrade</a>
+                        Copyright © 2020 Pizzería Toscana <br> Todos los derechos reservados. <br>  
                     </span>
                 </div>
 
